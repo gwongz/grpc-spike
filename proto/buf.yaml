@@ -1,0 +1,8 @@
+# config file for Buf commands like buf lint and buf ls-files 
+version: v1
+lint:
+  use:
+    - DEFAULT
+breaking:
+  use:
+    - WIRE_JSON

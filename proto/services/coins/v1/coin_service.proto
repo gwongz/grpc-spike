@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+import "com/crypto/v1/coin.proto";
+
+package services.coins.v1;
+
+service CoinService {
+	rpc GetCoin(GetCoinRequest) returns (GetCoinResponse) {}
+}
+
+message GetCoinRequest {
+	string id = 1;
+}
+
+message GetCoinResponse {
+	com.crypto.v1.Coin coin = 1;
+}
+
+

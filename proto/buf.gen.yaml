@@ -1,0 +1,14 @@
+# config file for auto generating code with buf
+
+version: v1
+plugins:
+  - name: js
+    out: ../gen/proto
+    opt: import_style=commonjs,binary
+  - name: grpc
+    out: ../gen/proto
+    opt: grpc_js
+    path: grpc_tools_node_protoc_plugin
+  - name: ts
+    out:  ../gen/proto
+    opt: grpc_js
