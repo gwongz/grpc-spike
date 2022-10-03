@@ -28,8 +28,8 @@ See this [issue](https://github.com/protocolbuffers/protobuf-javascript/issues/1
 ```npm run codegen```
 
 ## Suggestions for playing around
-- Add a new proto, compile and see the generated output in src/protos
-- Add a new RPC method to the service, compile and see the output in src/protos
+- Add a new proto, compile and see the generated output in gen/proto
+- Add a new RPC method to the service, compile and see the output in gen/proto
 - Implement the new RPC method in the server in src/server/index.ts and call it in src/client/index.ts
 
 
